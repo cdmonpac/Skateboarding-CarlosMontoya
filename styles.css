@@ -1,0 +1,434 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+/*-------------Cabcera-----------------*/
+header {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(1, 1, 48, 0.747),
+    rgb(1, 1, 48,0.747)
+  ),
+  url(header.jpg);
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 320px;
+}
+/*Boton de busqueda*/
+.buscar{
+  background-color: transparent;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.buscar:hover{
+  background-color: rgba(255, 255, 255, 0.205);
+  border-radius: 100px;
+}
+
+form{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+form input{
+  border-radius: 30px;
+  border-color: grey
+}
+
+
+
+/*Titulo skateboarding*/
+.contenedor h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: 40%;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+nav{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.seleccionado{
+  border: 1px solid red;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+
+.contenedor{
+  clear: both;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  background-color:rgba(1, 1, 48, 0.747);
+  padding-left: 0;
+  padding: 3px;
+}
+
+.menu li {
+  margin: 6px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 9px;  
+  transition: all 0.3s ease-in-out;
+}
+
+.menu li a:hover{
+  background-color: rgba(255, 255, 255, 0.205);
+  border-radius: 20px;
+}
+
+/*-------------fin_Cabcera-----------------*/
+
+/*-------------Cuerpo-----------------*/
+main{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+section.historia {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titulo_grande{
+  font-weight: 800;
+  font-size: 95px;
+  margin-bottom: 2px;
+  line-height: 0.9;
+  width: 40%;
+}
+
+.titulo_normal{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 45px;
+  width: 15%;
+}
+
+/*texto sobre la historia del skateboarding*/
+.texto{
+  margin-left: 60px;
+  text-align: justify;
+ float: right;
+ width: 52%;
+ line-height: 1.7;
+ font-size: 18px;
+}
+
+.texto p {
+  margin-bottom: 30px;
+}
+
+aside {
+  display: flex;
+}
+
+.izquierdo {
+
+  float: left;
+  margin-top: 100px;
+  width: 380px;
+  height: 580px;
+  justify-content: center;
+}
+
+.derecho {
+  float: right;
+  margin-top: 100px;
+  width: 380px;
+  height: 580px;
+  justify-content: center;
+}
+
+hr {
+  width: 100%;
+}
+/*fin texto sobre la historia del skateboarding*/
+
+/*texto sobre cultura del skateboarding*/
+section.cultura{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.foto_cultura{
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+.foto_cultura img{
+  display: block;
+  height: 75%;
+}
+/*fin texto sobre la cultura del skateboarding*/
+
+/*texto sobre los trucos del skateboarding*/
+section.trucos{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+iframe{
+ width: 560px;
+  height: 315px;
+  margin-left: 60px;
+  margin-right: auto;
+  border-radius: 5%;
+}
+
+.texto_trucos{
+  margin-top: 50px;
+  text-align: justify;
+ float: right;
+ margin-left: 12%;
+ width: 70%;
+ line-height: 1.7;
+ font-size: 18px;
+}
+/*fin texto sobre los trucos del skateboarding*/
+
+/*texto sobre los famosos del skateboarding*/
+main.famosos{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+
+}
+
+section.skater{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  clear: both;
+  width: 100%;
+}
+
+.titulo_famosos{
+  margin-top: 0;
+  font-size: 70px;
+  width: 70%;
+  margin-left: 0;
+  justify-content: flex-start;
+  clear: both;
+  display: flex;
+  float: left;
+  position: absolute;
+}
+
+
+.skater img {
+  text-align: justify;
+  display: block;
+ float: left;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  z-index: 10;
+margin-left: 15%;
+}
+
+section.famosos{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.texto_famosos{
+  text-align: justify;
+  width: 55%;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+
+.texto_aparte{
+  text-align: justify;
+  width: 100%;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-top: 100px;
+}
+
+
+/*fin texto sobre los famosos del skateboarding*/
+
+/*texto sobre contacto*/
+main.contacto{
+  display: flex;
+  flex-wrap: wrap; 
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
+}
+
+section.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+  clear: both;
+  width: 100%;
+}
+
+.contacto div.titulo_grande{
+  font-weight: 800;
+  font-size: 95px;
+  margin-bottom: 2px;
+  line-height: 0.9;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.contacto div.texto_contacto{
+  margin-left: 60px;
+  text-align: justify;
+ float: right;
+ width: 100%;
+ line-height: 1.7;
+ font-size: 18px;
+}
+
+section.contact-form {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.contact-form h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.contact-form form {
+position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form label {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+.contact-form button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 30px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+/*fin texto sobre contacto*/
+
+/*-------------fin_Cuerpo-----------------*/
+
+/*-------------footer-----------------*/
+footer{
+  background-color: rgb(1, 1, 48);
+  color: white;
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+
+footer p{
+  position: absolute;
+  text-align: center;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+}
+
+footer div{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+
+footer div .imagen{
+  margin-bottom: 5px;
+  display: inline-block;
+  bottom: 0;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  margin-inline: 10px;
+}
+/*-------------/footer-----------------*/
