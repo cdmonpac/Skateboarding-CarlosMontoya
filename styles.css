@@ -17,6 +17,29 @@ header {
   background-size: cover;
   height: 320px;
 }
+
+/*Reloj*/
+.hour {
+  color: rgb(245, 245, 206);
+}
+
+.min {
+  color: rgb(241, 241, 162);
+}
+
+.sec {
+  color: rgb(233, 197, 149);
+}
+
+#clock{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  font-size: xx-large;
+}
+
 /*Boton de busqueda*/
 .buscar{
   background-color: transparent;

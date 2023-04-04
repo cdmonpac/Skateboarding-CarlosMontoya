@@ -3,9 +3,20 @@
   <head>
     <title>Famosos Skateboarding Carlos Montoya</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
   </head>
   <body>
     <header>
+        <div id="clock">
+            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+            <br>
+            <!-- cliquear este boton llama a clockStart() -->
+            <input type="button" onclick="clockStart()" value="Iniciar">
+
+            <!-- cliquear este boton llama a clockStop() -->
+            <input type="button" onclick="clockStop()" value="Parar">
+        </div>
+          
       <div class="contenedor">
         <nav>
           <ul class="menu">
